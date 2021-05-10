@@ -22,7 +22,7 @@ export class AppComponent implements OnInit {
   }
 
   decrementar() {
-    this.store.dispatch(actions.dencrementar());
+    this.store.dispatch(actions.decrementar());
   }
 
   incrementar() {
