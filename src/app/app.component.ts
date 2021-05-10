@@ -6,5 +6,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'CursoReduxAngularNgRxFernandoHerrera-ReduxApp';
+  
+  contador: number;
+
+  constructor() {
+    this.contador = 10;
+  }
+
+  decrementar() {
+    this.contador --;
+  }
+
+  incrementar() {
+    this.contador ++;
+  }
+  
 }
