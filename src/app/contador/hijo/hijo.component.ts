@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { AppState } from 'src/app/app.reducers';
+import * as actions from '../contador.actions';
 
 @Component({
   selector: 'app-hijo',
@@ -18,11 +19,11 @@ export class HijoComponent implements OnInit {
   }
 
   dividir() {
-    
+    this.store.dispatch(actions.dividir({ numero: 2 }))
   }
 
   multiplicar() {
-    
+    this.store.dispatch(actions.multiplicar({ numero: 2 }));
   }
 
 }
